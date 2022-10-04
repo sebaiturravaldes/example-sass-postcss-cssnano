@@ -1,0 +1,28 @@
+{
+  "name": "example-sass-postcss-cssnano",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/ --output css/",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "minify": "npm run build-css && npx postcss css/ --dir dist/"
+  },
+  "keywords": [
+    "sass",
+    "node-sass",
+    "css",
+    "postcss", 
+    "cssnano"
+  ],
+  "author": "Sebastián Iturra",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.13",
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0"
+  }
+}

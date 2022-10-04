@@ -1,0 +1,16 @@
+.card {
+  margin: 10px; }
+
+.social-facebook {
+  background-color: black; }
+
+.social-instagram {
+  background-color: black; }
+
+.social-tiktok {
+  background-color: black; }
+
+.social-facebook,
+.social-instagram,
+.social-tiktok {
+  color: white; }
